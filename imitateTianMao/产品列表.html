@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script src="js/jquery.min.js"></script>
+<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+<style type="text/css">
+	/*整体的产品列表div*/
+	div.homepageCategoryProducts{
+		background-color: #f5f5f5;
+		padding: 50px 10px 50px 10px;
+		margin: 10px auto;
+		max-width: 1013px;
+	}
+
+	/*产品项*/
+	div.productItem{
+		width: 189px;
+		height: 285px;
+		border: 1px solid white;
+		background-color: white;
+		margin: 8px 4px;
+		float: left;
+		cursor: pointer;
+	}
+
+	/*产品描述信息*/
+	div.productItem span.productItemDesc{
+		font-size: 12px;
+		color: #666;
+		display: block;
+		padding: 16px;
+	}
+
+	/*产品价格*/
+	div.productItem span.productPrice{
+		font-size: 16px;
+		color: #ff003a;
+		display: block;
+		padding-left: 16px;
+		margin-top: -10px;
+	}
+
+	/*图片*/
+	div.productItem img{
+		width: 187px;
+		height: 190px;
+	}
+
+	/*产品图片鼠标悬停状态*/
+	div.productItem img:hover{
+		opacity: 0.7;
+		filter: alpha(opacity=70);
+	}
+
+	/*一个分类下5个产品为一个div*/
+	div.eachHomepageCategoryProducts{
+		margin: 0px 0px 40px 0px;
+	}
+
+	/*产品超链*/
+	a.productItemDescLink{
+		display: inline-block;
+		height: 66px;
+		text-decoration: none;
+	}
+
+	/*分类名称*/
+	span.categoryTitle{
+		font-size: 16px;
+		margin-left: 30px;
+		color: #646464;
+		font-weight: bold;
+	}
+
+	/*竖装条*/
+	div.left-mark{
+		display: inline-block;
+		height: 20px;
+		vertical-align: top;
+		width: 5px;
+		background-color: #19c8a9;
+	}
+
+	/*最下方end字样图片*/
+	img.endpng{
+		display: block;
+		width: 82px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+
+<div class="homepageCategoryProducts">
+	<div class="eachHomepageCategoryProducts">
+		<div class="left-mark"></div>
+		<span class="categoryTitle">太阳镜</span>
+		<div style="clear: both;"></div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/9543.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					好先生同款墨镜孙红雷偏光男士太阳镜韩明星
+				</span>
+			</a>
+			<span class="productPrice">
+				97.50
+			</span>
+		</div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/9532.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					帕森太阳眼镜男女2018偏光定制驾驶近视
+				</span>
+			</a>
+			<span class="productPrice">
+				518.70
+			</span>
+		</div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/9521.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					帕莎Prsr太阳女偏光镜范冰冰同款女
+				</span>
+			</a>
+			<span class="productPrice">
+				624.00
+			</span>
+		</div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/9510.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					变色眼镜男女款半框太阳镜大框潮流防辐射
+				</span>
+			</a>
+			<span class="productPrice">
+				170.00
+			</span>
+		</div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/9499.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					新款男士偏光镜日夜两用墨镜潮运动开车
+				</span>
+			</a>
+			<span class="productPrice">
+				551.00
+			</span>
+		</div>
+	</div>
+
+	<div class="eachHomepageCategoryProducts">
+		<div class="left-mark"></div>
+		<span class="categoryTitle">安全座椅</span>
+		<div style="clear: both;"></div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/10192.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					新生儿婴儿提篮式安全座椅汽车用车载儿童安全
+				</span>
+			</a>
+			<span class="productPrice">
+				882.00
+			</span>
+		</div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/10181.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					REEBABY汽车儿童安全座椅ISOFI
+				</span>
+			</a>
+			<span class="productPrice">
+				1344.00
+			</span>
+		</div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/10170.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					REEBABY儿童安全座椅9个月-12岁
+				</span>
+			</a>
+			<span class="productPrice">
+				1216.00
+			</span>
+		</div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/10159.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					好孩子汽车儿童安全座椅goodbaby9
+				</span>
+			</a>
+			<span class="productPrice">
+				1199.40
+			</span>
+		</div>
+		<div class="productItem">
+			<a href="#nowhere"><img width="100px" src="img/10148.jpg"></a>
+			<a href="#nowhere" class="productItemDescLink">
+				<span class="productItemDesc">[热销]
+					惠尔顿儿童安全座椅isifix硬接口汽车
+				</span>
+			</a>
+			<span class="productPrice">
+				1993.60
+			</span>
+		</div>
+	</div>
+	<img src="img/end.png" class="endpng">
+</div>
